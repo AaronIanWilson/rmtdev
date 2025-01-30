@@ -4,7 +4,7 @@ import { RESULTS_PER_PAGE } from "../lib/constants";
 import { SortBy, PageDirection, JobItem } from "../lib/types";
 
 type JobItemsContext = {
-  jobItems: JobItem[] | undefined;
+  jobItems: JobItem[] | null;
   jobItemsSortedAndSliced: JobItem[];
   isLoading: boolean;
   totalNumberOfResults: number;
